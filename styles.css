@@ -321,6 +321,122 @@ h5{
   height:500px;
 }
 
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.index-body, .about-body, .contact-body, .rates-body, .services-body, .all-services-body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Remove background images for smaller screens */
+@media screen and (max-width: 600px) {
+    .index-body, .about-body, .contact-body, .rates-body, .services-body, .all-services-body {
+        background-image: none;
+    }
+}
+
+/* Add padding to the top navigation for better spacing on small screens */
+.topnav {
+    background-color: #5D5A5A;
+    height: 55px;
+    padding: 5px;
+}
+
+/* Adjust font size and padding for navigation links on small screens */
+.topnav a {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Add padding and adjust font size for the footer on small screens */
+.footer {
+    background-color: #5D5A5A;
+    height: 25px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Make the form elements responsive */
+.container {
+    padding: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+}
+
+/* Adjust the submit button width for small screens */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Adjust dropdown content positioning for small screens */
+.dropdown-content {
+    top: 55px;
+    left: 0;
+}
+
+.dropdown-content2 {
+    top: 55px;
+    left: 0;
+}
+
+/* Center align the home-middle content on small screens */
+.home-middle {
+    width: 90%;
+    height: auto;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+}
+
+/* Make the accordion sections responsive */
+.accordion-body {
+    font-size: 14px;
+}
+
+/* Center the container-services on small screens */
+.container-services {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    left: 5%;
+    top: 10%;
+}
+
+/* Make the carousel responsive */
+.carousel {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 10%;
+}
+
+/* Adjust font size for headings and descriptions on small screens */
+h5 {
+    font-size: 18px;
+}
+
+.carousel-description {
+    font-size: 12px;
+}
+
+/* Adjust image height for small screens */
+.d-block {
+    border-radius: 10px;
+    max-height: 300px;
+}
+
 
 
 
