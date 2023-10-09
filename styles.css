@@ -9,6 +9,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
 }
 
 .about-body {
@@ -35,9 +36,17 @@ body, html {
 .topnav {
     background-color: #5D5A5A;
     height:55px;
+    width:100%;
+}
+
+@media screen and (max-width: 500px){
+  .topnav{
+
+  }
 }
 
 .footer{
+
   background-color: #5D5A5A;
   height:25px;
   position: fixed;
@@ -47,6 +56,8 @@ body, html {
   color: white;
   text-align: center;
 }
+
+
 /* Style the links inside the navigation bar */
 .topnav a{
   float: left;
@@ -118,7 +129,7 @@ label {
 
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75, input[type=submit], .About-me-section {
     width: 100%;
     margin-top: 0;
   }
@@ -186,9 +197,28 @@ input[type=submit] {
   opacity: 0;
 }
 
+@media screen and (max-width: 754px) {
+  .home-middle  {
+    width:200px;
+    left:30%;
+
+ }
+}
+
+
+
+
+
 #section-middle{
   color:white;
   font-size:40px;
+}
+
+@media screen and (max-width: 754px) {
+  #section-middle {
+    text-align:center;
+
+ }
 }
 
 .btn-success{
@@ -198,12 +228,27 @@ input[type=submit] {
   left:30%;
 }
 
+@media screen and (max-width: 754px) {
+  .btn {
+    left:30%;
+    top: 170%;
+
+ }
+}
+
 .About-me-section{
   position: absolute;
-  width:800px;
+  width:700px;
   height:550px;
   top: 7%;
   left: 25%;
+}
+
+@media screen and (max-width: 754px) {
+   .About-me-section {
+    width: 50%;
+
+  }
 }
 
 .accordion{
@@ -228,7 +273,7 @@ input[type=submit] {
 
 #content {
     position:absolute;
-    width:1200px;
+    width:100%;
     background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
     margin: 0 0 10px;
@@ -238,8 +283,32 @@ input[type=submit] {
     height: 110%;
 }
 
-.entry{
 
+@media screen and (max-width: 500px) {
+  #content {
+    position:absolute;
+    width:70%;
+    height:100%;
+
+ }
+}
+@media screen and (max-width: 500px) {
+  .portfolio {
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    padding: 5px;
+    justify-content:space-between;
+    width:900px;
+    height:100%;
+    overflow:auto;
+ }
+}
+
+
+
+.entry{
   padding: 10px;
   font-size:20px;
   height:5%
@@ -255,7 +324,6 @@ input[type=submit] {
 }
 
 .portfolio-item{
-  border: 1px solid #DDDDDD;
   width:33%;
   height:45%;
 }
@@ -322,7 +390,19 @@ h5{
 }
 
 
+@media screen and (max-width: 754px) {
+  .portfolio  {
+    display: block;
 
+ }
+}
+
+@media screen and (max-width: 754px) {
+  #content  {
+    display:block;
+    left:10%;
+}
+ }
 
 
 
